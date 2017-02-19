@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="BasicCSS.css"/>
+    <link rel="stylesheet" href="MultiCSS.css"/>
+
+    <script>
+      function openNav()
+      {
+        document.getElementById("sideNav").style.width = "250px";
+        document.body.style.backgroundColor="rgba(0,0,0,0.4)"
+      }
+
+      function closeNav()
+      {
+        document.getElementById("sideNav").style.width = "0px";
+        document.body.style.backgroundColor = "white"; 
+      }
+
+      function myApps()
+      {
+        document.getElementById("myDrop").classList.toggle("show");
+      }
+      
+      function Display()
+      {
+        var text=0;
+        var x = parseInt(document.getElementById("number").value);
+        
+        var i=1;
+        while(i<11)
+        {
+          text+=x+" * "+i+" = "+x*i+"<br>";
+          i++;
+        }
+        
+        document.getElementById("ans").innerHTML=text;
+      }
+      
+      function Clear()
+      {
+        document.getElementById("ans").innerHTML="Waiting for Input!";
+      }
+
+    </script>
+  </head>
+  <body id="main">
+    <div id="sideNav" class="sideNav">
+      <a class="close" onclick="closeNav()">&times;
+      </a>  
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <a><img src="batman-icon-png-16.png" width="92"></img></a>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><button class="button" onClick="myApps()">Apps</button></li>
+        <li><a href="https://about.me/sagarganiga">About</a></li>
+        <li class="login"><span class="open" onClick="openNav()" > &#9776   
+          </span> </li>
+      </ul>
+      <div class="myDrop" id="myDrop">
+        <a href="Calculator.html">Calculator</a>
+        <a href="Table.html">Multiplication table</a>
+        <a href="#">Loan Graph</a>
+      </div>
+    </div>
+    </div>
+  <div class="content">
+    <h1>Multiplication Table</h1>
+    <h1>
+      <input type="number" id="number" placeholder="Enter the number"/>
+    </h1>
+    <input class= "buttons" type="submit" id="add" value="Display" onClick="Display()"/>
+    <h2 id="ans">Waiting for input!</h2>
+
+    <input class= "buttons" type="submit" id="clear" value="Clear Screen" onClick="Clear()"/>
+  </div>
+  <div class="footer">
+
+  </div>
+  </body>
+</html>

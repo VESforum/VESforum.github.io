@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<!--  head-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VES Forum</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="pushmenu.css"/>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    
+<!--    Script-->
+    
+    <script src="pushmenu.js"></script>
+    <script src="jssor.slider-22.2.8.mini.js"></script>
+
+    <script>
+      $(window).scroll(function(){
+        var sticky = $('#child2'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= 50) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
+      });
+      
+      
+      $(document).ready(function(){
+        $('#pm_menu').pushmenu({ button : "#open" });
+      });
+      
+      
+      jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+      });
+    
+    
+    </script>
+    
+  
+  </head>
+  
+  
+  
+<!--  body-->
+  
+  <body>
+    
+<!--    header   -->
+    <div id="header" class="header">
+<!--      logo-->
+      <div id="child1" class="child1">
+      <b class="ves">VES Forum</b>  Redefining Boundaries
+      </div>
+      
+<!--    navigation-->
+    <div id="child2" class="child2">
+        <ul>
+          <li><a>News</a></li>
+          <li><a>Addmission</a></li>
+          <li><a>Result</a></li>
+          <li><a>Department</a></li>
+          <li><a id="open">Menu</a></li>
+          </ul>
+        
+      </div>
+        <div id="pm_menu" class="pm_close">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Department</a></li>
+            <li><a href="">Addmission</a></li>
+            <li><a href="">Result</a></li>
+            <li><a href="Journals.html">Assignment</a></li>
+          </ul>
+        </div>
+    </div>
+  
+<!--    content-->
+  
+  
+  
+    <div id="contentS">
+<!--      First partition-->
+      <div id="data">
+        <div id="box">
+          <b class="high">Highlights...</b>
+          <!--        Slider              -->
+            <div id="slider1_container">
+            <div u="slides" id="slides">
+              <div>
+                <img u="image" src="https://ves.ac.in/vesit/wp-content/uploads/sites/3/2015/11/IMG_9312-740x290_c.jpg" />
+              </div>
+              <div>
+                <img u="image" src="https://ves.ac.in/vesit/wp-content/uploads/sites/3/2015/11/award-740x290_c.jpg" />
+              </div>
+              <div>
+                <img u="image" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/16266298_1421809511171281_6194673777132441273_n.jpg?oh=02fa8247a8d2ad57b0d8e557f523a2e5&oe=592B422F" />
+              </div>
+              <div>
+                <img u="image" src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/16603110_1442985159053716_7241394019963085313_n.jpg?oh=a78107bcf8e397933faa7a0f84095fda&oe=59406F48" />
+              </div>
+              
+            </div>
+          </div>
+        </div>        
+        
+      </div>
+      
+<!--      Second partition-->
+      
+      <div id="news">
+        <button id="new">&#9998 New Thread</button>
+        <div id="hot">
+          <h2>What's Hot</h2>
+          <a href="Journals.html"><button id="ass">Assignment</button></a>
+          <p>Experiment Number 0</p>
+          <p>Experiment Number 1</p>
+          <p>Experiment Number 2</p>
+          <p>Experiment Number 3</p>
+          <p>Experiment Number 4</p>
+        </div>
+      </div>
+      
+      
+      
+<!--    last div  -->
+    </div>
+</html>

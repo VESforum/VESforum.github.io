@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Experiment Number 4</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        <script>
+            $(document).ready(function(){
+                $("#hideB").click(function(){
+                    $("#hide").hide();
+            });
+        });
+
+        $(document).ready(function(){
+                $("#hideS").click(function(){
+                    $("#hide").show();
+            });
+        });
+
+        $(document).ready(function(){
+                $("#hideT").click(function(){
+                    $("#hide").toggle();
+            });
+        });
+
+        $(document).ready(function(){
+                $("#input").focus(function(){
+                    $("#input").css("border-color","red");
+                    $("#input").css("width","400px");
+                    $("#input").css("margin-left","100px");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <p id="hide">This will be hidden</p>
+        <p>This will not be hidden</p>
+        <button id="hideB">hide</button>
+        <button id="hideS">show</button>
+        <button id="hideT">toggle</button>
+        <hr>
+        <br><br><br><br><br><br>
+        <input id="input" type="text" placeholder="touch me" style="border-color:none"/>
+    </body>
+</html>

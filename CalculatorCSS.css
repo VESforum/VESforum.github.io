@@ -1,0 +1,30 @@
+.content
+{
+  text-align: center;
+  margin: 100px;
+  padding: 20px;
+  box-shadow: 4px 4px 4px 4px #BDBDBD;
+}
+
+@media screen and (max-width:600px) 
+{
+  .content{font-size: 40%; margin: 20%;}
+  .red{display: inline-block;font-size: 60%; padding: 30%;}
+  
+  #first{width: 80%;}
+  #second{width: 80%;}
+}
+
+.buttons
+{
+  border: none;
+  padding: 10px;
+  background: #FFC107;
+  border:1px solid black;
+  box-shadow: 1px 2px 3px black;
+}
+
+#ans
+{
+  font-size: 220%;
+}
