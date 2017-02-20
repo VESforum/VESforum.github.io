@@ -19,6 +19,19 @@
                     $("#input").css("width","400px");
                     $("#input").css("margin-left","100px");
             }); 
+		    
+		var i=1;
+            $("#mul").click(function(){
+            	var x = $("#multi").val();
+                var text = "";
+               
+                for(i=1;i<=10;i++){
+                	text += x + "*" + i + "=" + (x*i) + "<br/>";
+                	}
+                    
+               $("#ans").html(text); 
+            });
+		});
 	    });
         </script>
     </head>
