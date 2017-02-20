@@ -30,7 +30,20 @@
             });
             
         $(document).ready(function(){
-                $("#multi").click(multiplication())});
+                $("#multi").click(function(){
+                    $var text=0;
+                    $var x = parseInt(document.getElementById("multi").value);
+        
+                    $var i=1;
+                    while(i<11)
+                    {
+                        text+=x+" * "+i+" = "+x*i+"<br>";
+                        i++;
+                    }
+        
+            document.getElementById("ans").innerHTML=text;
+                });
+        });
          
         function multiplication()
         {
