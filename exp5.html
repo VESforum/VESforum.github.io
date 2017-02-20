@@ -6,6 +6,21 @@
 	  <link rel="stylesheet" href="exp5CSS.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+	  <script>
+	  	$(document).ready(function(){
+			$("#rform").validate({
+				rules:
+				{
+					firstname: "required",
+					lastname: "required",
+					username:
+					{
+						required
+					}
+				}
+			});
+		});
+	  </script>
     </head>
     <body>
       <center>
@@ -47,7 +62,7 @@
 							<input type="checkbox" class="checkbox" id="newsletter" name="newsletter">
 						</p>
 						<p>
-							<input class="submit" type="submit" value="Submit">
+							<button class="submit" type="submit">Submit</button>
 						</p>
           			</fieldset>
         		</form>
