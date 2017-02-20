@@ -29,38 +29,28 @@
                     $("#input").css("margin-left","100px");
             });
             
-        $(document).ready(function(){
-                $("#mul").click(function(){
-                    var text=0;
-                    var x = $("#multi").val();
-        
-                    var i=1;
-                    while(i<11)
-                    {
-                        text+=x+" * "+i+" = "+x*i+"<br>";
-                        i++;
-                    }
-                    $("#ans").html(text);
-                    document.getElementById("ans").innerHTML=text;
-                });
-          
+        $(document).ready(function(){ 
+            multiplication();
         });
          
-//         function multiplication()
-//         {
-//             var text=0;
-//             var x = parseInt($("#multi").value);
-        
-//             var i=1;
-//             while(i<11)
-//             {
-//                 text+=x+" * "+i+" = "+x*i+"<br>";
-//                 i++;
-//             }
-        
-//             document.getElementById("#ans").innerHTML=text;
-//         }
            
+        </script>
+        <script type="text/javascript"
+        function multiplication()
+        {
+            var text=0;
+            var x = parseInt($("#multi").value);
+        
+            var i=1;
+            while(i<11)
+            {
+                text+=x+" * "+i+" = "+x*i+"<br>";
+                i++;
+            }
+        
+            document.getElementById("#ans").innerHTML=text;
+        }
+            
         </script>
     </head>
     <body>
