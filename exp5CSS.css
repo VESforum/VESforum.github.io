@@ -17,7 +17,7 @@ form .error {
   color: #ff0000;
 }
 
-form button {
+.submit{
   height: 30px;
   line-height: 30px;
   background: #e67e22;
