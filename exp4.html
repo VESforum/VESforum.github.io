@@ -28,7 +28,17 @@
                     $("#input").css("width","400px");
                     $("#input").css("margin-left","100px");
             });
+            
+        $(document).ready(function(){
+                $("#multi").click(function(){
+                    $("#mul").multiplication();
+            });
         });
+            
+       function multiplication(){
+           
+       }
+           
         </script>
     </head>
     <body>
@@ -40,5 +50,11 @@
         <hr>
         <br><br><br><br><br><br>
         <input id="input" type="text" placeholder="touch me" style="border-color:none"/>
+        
+        
+        <hr>
+        <br>
+        <input id="multi" type="number" placeholder="Enter the number"/>
+        <button id="mul">Click me</button>
     </body>
 </html>
