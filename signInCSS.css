@@ -1,0 +1,77 @@
+body
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(http://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;     
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo
+{
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    color: whitesmoke;
+    font-size: 560%;
+    font-family: 'Times New Roman';
+    float: left;
+    font-weight: normal;
+}
+.tagline
+{
+    color:linen;
+    font-size: 200%;
+    font-family: 'helvetica'
+}
+
+#logIn
+{
+    
+    width: 60%;
+    float: right;
+}
+#logo,#logIn
+{
+    display: inline;
+}
+
+lable
+{
+    font-family: 'helvetica';
+    font-size: 139%;
+    color: black;
+}
+
+input
+{
+    background-color:white;
+    border-color: transparent;
+    padding: 3px;
+}
+
+#submit
+{
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.loginForm
+{
+    padding: 100px 150px;
+}
+
+h1
+{
+    color: white;
+}
+
+#forgotPassword
+{
+    font-size: 50%;
+    
+}

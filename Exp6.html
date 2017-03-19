@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>VESforum</title>
+        <meta name="viewpoint" content="width=device-width, initital-scale=1">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        <link rel="stylesheet" href="styleIndex.css">
+        <script type="text/javascript" src="textition.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#logo').textition({
+                    handler: 'mouseenter',
+                    animation: 'ease-in-out',
+                    speed:1
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="logo">
+            <h1 class="logo">Experiment Number 6</h1>
+            <h2 class="tagline">Coding With PHP</h2>
+        </div>
+        <div id="logIn">
+            <div class="loginForm">
+                <h1>Git Pages can't handle PHP codes.... Sad!</h1>
+            </div>
+        </div>
+    </body>
+</html>

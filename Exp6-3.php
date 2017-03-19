@@ -19,13 +19,11 @@
                 if($y==4)
                 {
                     echo "Given Month is April";
-
                 }
                 else if($y==5)
                 {
                     echo "Given Month is May";
                 }
-
                 $x = date('m');
                 if($x==4)
                     echo "Month is April";

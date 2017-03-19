@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>VESforum</title>
+        <meta name="viewpoint" content="width=device-width, initital-scale=1">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        <link rel="stylesheet" href="styleIndex.css">
+        <script type="text/javascript" src="textition.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#logo').textition({
+                    handler: 'mouseenter',
+                    animation: 'ease-in-out',
+                    speed:1
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="logo">
+            <h1 class="logo">VES forum</h1>
+            <h2 class="tagline">Redefining Bounderies</h2>
+        </div>
+        <div id="logIn">
+            <div class="loginForm">
+                <form id="loginForm">
+                    <h1>Login</h1>
+                    <lable for="uname"><h class="lable">Username</h></lable><br><br>
+                    <input name="uname" type="text" size="40%"><br><br>
+                    <lable for="password"><h class="lable">Password <a id="forgotPassword">Forgot Password?</a></h></lable><br><br>
+                    <input name="password" type="password" size="40%"><br><br>
+                    <input name="submit" type="submit" value="Log In" id="submit">
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>
